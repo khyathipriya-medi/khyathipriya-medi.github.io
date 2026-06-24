@@ -1,18 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Khyathipriya Medi | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Khyathipriya Medi | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#0d1117;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#c9d1d9;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#238636;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#58a6ff;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#161b22;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#c9d1d9;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#21262d;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#161b22;
+    margin-top:40px;
+}
+
+a{
+    color:#58a6ff;
+}
+</style>
 </head>
-<body style="font-family: Arial; background: black; color: white; text-align: center;">
 
-<h1>Hi, I'm Khyathipriya 👋</h1>
-<p>Computer Science Student | AI/ML Enthusiast</p>
+<body>
 
-<h2>Projects</h2>
-<p>Coming soon...</p>
+<header>
+    <h1>Hi, I'm Khyathipriya 👋</h1>
+    <p>ECE Student | Python Developer | AI/ML Enthusiast</p>
 
-<h2>Contact</h2>
-<p>Email: khyathipriya79@gmail.com</p>
+    <a href="https://github.com/khyathipriya-medi" class="btn">
+        View GitHub
+    </a>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a 3rd-year Electronics and Communication Engineering student
+        passionate about Artificial Intelligence, Machine Learning,
+        Embedded Systems, and Software Development.
+        I enjoy building practical projects that solve real-world problems.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Data Structures</div>
+        <div class="skill">OOP</div>
+        <div class="skill">MATLAB</div>
+        <div class="skill">GNU Radio</div>
+        <div class="skill">Embedded Systems</div>
+        <div class="skill">Verilog</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Tactile Paving Detection</h3>
+            <p>
+                Deep learning-based tactile paving recognition system
+                using MATLAB and CNN models for assisting visually
+                impaired individuals.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sign Language Detection</h3>
+            <p>
+                Real-time hand gesture recognition using Python,
+                OpenCV, MediaPipe, and TensorFlow.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Analog Signal Scrambling</h3>
+            <p>
+                GNU Radio project implementing analog signal
+                scrambling and descrambling techniques using SDR.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>RFID Bus Card Reader</h3>
+            <p>
+                Embedded system project for automated public
+                transportation fare collection using RFID.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+
+    <p>
+        <strong>B.Tech - Electronics & Communication Engineering</strong><br>
+        VNR Vignana Jyothi Institute of Engineering & Technology<br>
+        2023 - 2027
+    </p>
+</section>
+
+<section>
+    <h2>Contact</h2>
+
+    <p>Email: khyathipriya79@gmail.com</p>
+    <br>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/khyathipriya-medi">
+            github.com/khyathipriya-medi
+        </a>
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Khyathipriya Medi</p>
+</footer>
 
 </body>
 </html>
